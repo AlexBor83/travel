@@ -1,0 +1,100 @@
+.country-description__wrap {
+  background-image: url(../../img/background_country.png);
+  background-repeat: no-repeat;
+  background-position: 200px 100px;
+}
+
+
+.country-description__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 110px;
+}
+
+.country-description__item {
+  padding-right: 99px;
+  color: rgba(18, 18, 19, 0.3);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  &:nth-last-child(1) {
+    padding-right: 0;
+  }
+
+}
+
+.country-description__item a {
+  color: rgba(18, 18, 19, 0.3);
+}
+
+.country-description__item--active a {
+  color: #FE7865;;
+}
+
+.country-description__card {
+  display: none;
+
+  &--active {
+  display: flex;
+  position: relative;
+  padding-bottom: 240px;
+  }
+
+}
+
+.country-description__content {
+  display: flex;
+  width: 370px;
+  flex-direction: column;
+  margin-right: 90px;
+  align-self: flex-start;
+}
+
+.country-description__title {
+  margin-bottom: 50px;
+}
+
+.country-description__text {
+  padding-left: 10px;
+  margin-bottom: 52px;
+}
+
+.country-description__reviews {
+  margin: 0;
+  padding-left: 30px;
+  position: absolute;
+  width: 382px;
+  background-color: #fff;
+  right: 0px;
+  top: 30%;
+}
+
+.country-description__subtitle {
+  margin-top: 30px;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.country-description__quote {
+  width: 322px;
+  font-size: 14px;
+  line-height: 28px;
+  color: rgba(44, 46, 63, 0.7);
+  margin-bottom: 35px;
+}
+
+.country-description__author {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 84px;
+  margin-bottom: 40px;
+}
+

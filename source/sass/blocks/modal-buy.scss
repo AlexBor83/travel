@@ -1,0 +1,66 @@
+.modal-buy {
+  width: 728px;
+  height: 444px;
+  background-color: #fbf8f8;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.modal-buy__clouse {
+  position: absolute;
+}
+
+.modal-buy__form {
+  text-align: center;
+  width: 390px;
+}
+
+.modal-buy__title {
+  color: #48494d;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 43px;
+  margin-top: 72px;
+  margin-bottom: 50px;
+}
+
+.modal-buy__list {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-buy__input {
+  display: block;
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 1px solid #d7d9df;
+  font-family: "Montserrat", "Times New Roman", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #48494d;
+  padding-left: 20px;
+
+  &::placeholder {
+    font-family: "Montserrat", "Times New Roman", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+  }
+}
+
+.modal-buy__button {
+  width: 176px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 0 auto;
+}
+
+
+
+

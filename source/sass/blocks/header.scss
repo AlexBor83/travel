@@ -1,0 +1,76 @@
+.header__top {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1170px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 40px auto;
+}
+
+
+.header__logo {
+  display: block;
+}
+
+.header__nav {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.header__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.header__item {
+  margin-right: 40px;
+}
+
+.header__link {
+  color: #141517;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.header__tel {
+  color: #141517;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.header__bottom {
+  background-image: url(../../img/header_desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 860px;
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.header__slogan {
+  padding-top: 185px;
+  padding-left: 1075px;
+  color:  #FFFFFF;
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 80px;
+  width: 412px;
+  padding-bottom: 30px;
+}
+
+.header__text {
+  font-size: 16px;
+  line-height: 27px;
+  width: 380px;
+  padding-bottom: 40px;
+}
+
+
+
+

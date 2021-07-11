@@ -1,0 +1,10 @@
+.page-body {
+  font-family: "Montserrat", "Times New Roman", sans-serif;
+  color: #2C2E3F;
+  font-weight: 400;
+  min-height: 100%;
+  min-width: 320px;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}

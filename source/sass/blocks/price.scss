@@ -1,0 +1,41 @@
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 140px;
+}
+
+.price__card {
+  margin-right: 30px;
+
+  &--economy {
+   margin-right: 109px;
+  }
+}
+
+.price__content {
+  width: 291px;
+}
+
+.price__title {
+  margin-top: 130px;
+  margin-bottom: 50px;
+}
+
+.price__text {
+  margin-bottom: 60px;
+}
+
+.price__subtitle {
+  display: block;
+  margin-left: 50px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.price__tel {
+  color: #000000;
+  font-size: 20px;
+  line-height: 32px;
+  margin-left: 50px;
+}

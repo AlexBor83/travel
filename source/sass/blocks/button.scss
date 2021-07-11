@@ -1,0 +1,47 @@
+.button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #FE7865;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 340px;
+  display: block;
+  text-align: center;
+}
+
+.button__clouse {
+  position: absolute;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  top: 20px;
+  left: 650px;
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    transform: rotate(45deg);
+    content: "";
+    width: 25px;
+    height: 1px;
+    background-color: rgba(20, 21, 23, 0.2);
+    top: 5px;
+    left: 5px;
+  }
+
+  &::after {
+    position: absolute;
+    transform: rotate(-45deg);
+    content: "";
+    width: 25px;
+    height: 1px;
+    background-color: rgba(20, 21, 23, 0.2);
+    top: 5px;
+    left: 5px;
+  }
+}
