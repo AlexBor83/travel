@@ -5,8 +5,16 @@
   padding-left: 10px;
   padding-right: 10px;
   margin: 40px auto;
-}
+  align-items:center;
 
+  @media (max-width: $desktop-width) {
+    width: 768px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 320px;
+  }
+}
 
 .header__logo {
   display: block;
@@ -34,13 +42,8 @@
   line-height: 17px;
 }
 
-.header__tel {
-  color: #141517;
-  font-size: 18px;
-  line-height: 32px;
-}
-
 .header__bottom {
+  background-color: rgb(41, 52, 100);
   background-image: url(../../img/header_desktop.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -48,12 +51,36 @@
   min-height: 860px;
   width: 1920px;
   margin: 0 auto;
+
+  @media (max-width: $desktop-width) {
+    background-image: url(../../img/header_tablet.jpg);
+    width: 768px;
+    min-height: 344px;
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url(../../img/header_mobile.jpg);
+    width: 320px;
+    height: 235px;
+    min-height: 0;
+  }
 }
 
 .header__slogan {
   padding-top: 185px;
   padding-left: 1075px;
   color:  #FFFFFF;
+
+   @media (max-width: $desktop-width) {
+    padding-top: 60px;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 81px;
+    margin-bottom: 20px;
+  }
 }
 
 .header__title {
@@ -62,6 +89,21 @@
   line-height: 80px;
   width: 412px;
   padding-bottom: 30px;
+  margin: 0;
+
+  @media (max-width: $desktop-width) {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+    margin-bottom: 102px;
+  }
 }
 
 .header__text {
@@ -69,6 +111,38 @@
   line-height: 27px;
   width: 380px;
   padding-bottom: 40px;
+
+  @media (max-width: $desktop-width) {
+    width: 400px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: $tablet-width) {
+    color: #2C2E3F;
+    width: 290px;
+  }
+}
+
+.header__button {
+  position: relative;
+  text-align: left;
+  padding-left: 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../img/arrow-down.svg);
+    width: 17px;
+    height: 17px;
+    top: 30px;
+    left: 240px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 288px;
+  }
 }
 
 

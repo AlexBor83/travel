@@ -4,13 +4,17 @@
   border-radius: 6px;
   padding: 40px 30px 30px 30px;
 
-
   &:hover,
   &:focus {
     border-color: #FE7865;
     cursor: pointer;
   }
 
+  @media (max-width: $desktop-width) {
+    width: 288px;
+    padding: 0;
+    text-align: center;
+  }
 }
 
 .card__title {
@@ -19,13 +23,28 @@
   font-size: 28px;
   line-height: 34px;
   margin-bottom: 19px;
+
+  @media (max-width: $desktop-width) {
+    width: 225px;
+    font-size: 24px;
+    line-height: 34px;
+    margin: 30px auto 11px auto;
+  }
 }
+
 .card__text {
   margin: 0;
   font-size: 16px;
   line-height: 24px;
   width: 289px;
   margin-bottom: 80px;
+
+  @media (max-width: $desktop-width) {
+    margin: 0 auto 30px auto;
+    font-size: 16px;
+    line-height: 24px;
+    width: 248px;
+  }
 }
 
 .card__list {
@@ -35,25 +54,70 @@
   padding-left: 30px;
   font-size: 16px;
   line-height: 32px;
+
+  @media (max-width: $desktop-width) {
+    padding-left: 50px;
+    text-align: left;
+  }
 }
 
 .card__item {
+  position: relative;
   width: 280px;
   margin-bottom: 30px;
+  padding: 0;
+
+  &::before {
+    position: absolute;
+    background-image: url(../../img/tick_red.svg);
+    background-repeat: no-repeat;
+    content: "";
+    width: 14px;
+    height: 12px;
+    left: -30px;
+    top: 10px;
+  }
 
   &:last-child {
     margin-bottom: 54px;
   }
+
+  @media (max-width: $desktop-width) {
+    width: 218px;
+
+    &:last-child {
+      margin-bottom: 45px;
+    }
+  }
 }
+
+.card:hover .card__item::before {
+  background-image: url(../../img/tick.svg);
+  width: 50px;
+  height: 42px;
+}
+
+
 
 .price__card--economy .card__item {
   &:last-child {
     margin-bottom: 30px;
   }
+
+  @media (max-width: $desktop-width) {
+
+    &:last-child {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .card__button {
   width: 310px;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 

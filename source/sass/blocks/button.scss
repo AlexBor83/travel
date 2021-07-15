@@ -10,6 +10,24 @@
   width: 340px;
   display: block;
   text-align: center;
+  letter-spacing: 2px;
+  border: none;
+
+  &:focus,
+  &:hover {
+    background-color: #F17D4B;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
 
 .button__clouse {

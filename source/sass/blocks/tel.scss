@@ -1,0 +1,28 @@
+.tel {
+  position: relative;
+  color: #141517;
+  font-size: 18px;
+  line-height: 32px;
+  text-decoration-line: underline;
+  display: block;
+
+  &:hover,
+  &:focus {
+    color: #FE7865;
+  }
+
+  &:hover path {
+    stroke: #FE7865;
+  }
+
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.tel__svg {
+  position: absolute;
+  left:-40px;
+
+}

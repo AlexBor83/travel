@@ -1,8 +1,32 @@
 .main__title {
+  position: relative;
   margin: 0;
   font-weight: 600;
   font-size: 55px;
   line-height: 80px;
+
+  &::before {
+    content: "";
+    width: 229px;
+    height: 4px;
+    background-color: #FE7865;
+    position: absolute;
+    top: 180px;
+  }
+
+  @media (max-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 45px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .main__text{

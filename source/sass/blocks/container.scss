@@ -3,4 +3,14 @@
   width: 1230px;
   padding-left: 30px;
   padding-right: 30px;
+
+  @media (max-width: $desktop-width) {
+    width: 768px;
+    padding: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 320px;
+  }
 }
+

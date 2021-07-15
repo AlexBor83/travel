@@ -2,15 +2,29 @@
   background-image: url(../../img/background_country.png);
   background-repeat: no-repeat;
   background-position: 200px 100px;
+
+  @media (max-width: $desktop-width) {
+    background-image: none;
+  }
 }
 
-
 .country-description__list {
+  position: relative;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   padding: 0;
   margin-bottom: 110px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 900px;
+    background-color: rgba(44, 46, 63, 0.3);
+    left: 0;
+    top: 30px;
+  }
 }
 
 .country-description__item {
@@ -19,11 +33,11 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  letter-spacing: -0.415px;
 
   &:nth-last-child(1) {
     padding-right: 0;
   }
-
 }
 
 .country-description__item a {
@@ -31,18 +45,22 @@
 }
 
 .country-description__item--active a {
-  color: #FE7865;;
+  color: #fe7865;
 }
 
 .country-description__card {
   display: none;
 
   &--active {
-  display: flex;
-  position: relative;
-  padding-bottom: 240px;
-  }
+    display: flex;
+    position: relative;
+    padding-bottom: 240px;
 
+    @media (max-width: $desktop-width) {
+      flex-direction: column;
+      padding-bottom: 112px;
+    }
+  }
 }
 
 .country-description__content {
@@ -51,15 +69,44 @@
   flex-direction: column;
   margin-right: 90px;
   align-self: flex-start;
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .country-description__title {
   margin-bottom: 50px;
+
+  &::before {
+    top: 100px;
+  }
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 
 .country-description__text {
   padding-left: 10px;
   margin-bottom: 52px;
+
+  @media (max-width: $desktop-width) {
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+  }
+}
+
+.country-description__button {
+  width: 250px;
+
+  @media (max-width: $tablet-width) {
+    width: 288px;
+    margin-bottom: 50px;
+  }
 }
 
 .country-description__reviews {
@@ -68,8 +115,21 @@
   position: absolute;
   width: 382px;
   background-color: #fff;
+  width: 367px;
   right: 0px;
-  top: 30%;
+  top: 596px/2 - 367px/2;
+
+  @media (max-width: $desktop-width) {
+    left: 20%;
+    top: 47%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 268px;
+    padding-left: 20px;
+    left: 9%;
+    top: 560px;
+  }
 }
 
 .country-description__subtitle {
@@ -78,6 +138,17 @@
   font-weight: 500;
   font-size: 30px;
   line-height: 37px;
+
+  @media (max-width: $tablet-width) {
+    width: 320px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 228px;
+  }
 }
 
 .country-description__quote {
@@ -86,15 +157,42 @@
   line-height: 28px;
   color: rgba(44, 46, 63, 0.7);
   margin-bottom: 35px;
+
+  @media (max-width: $tablet-width) {
+    width: 228px;
+    text-align: center;
+    margin-bottom: 68px;
+  }
 }
 
 .country-description__author {
+  display: flex;
+
+  margin-bottom: 40px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 34px;
+    align-items: flex-start;
+  }
+}
+
+.country-description__photo {
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.country-description__name {
   display: block;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  margin-left: 84px;
-  margin-bottom: 40px;
-}
+  align-self: center;
+  padding-left: 16px;
 
+  @media (max-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
+}
