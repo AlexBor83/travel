@@ -1,19 +1,8 @@
-// @mixin font($font_name, $file_name, $weight, $style) {
-
-//   @font-face {
-//   font-family: $font_name;
-//   font-display: swap;
-//   src: url("../blocks/fonts/#{$file_name}.woff") format("woff"), url("../blocks/fonts/#{$file_name}.woff2") format("woff2");
-//   font-weight: #{$weight};
-//   font-style: #{$style};
-//   }
-//   }
-
 @import "normalize.scss";
 @import "viewports.scss";
 @import "global.scss";
 @import "colors.scss";
-//@import "blocks/fonts.scss";
+@import "blocks/fonts.scss";
 @import "blocks/button.scss";
 @import "blocks/tel.scss";
 @import "blocks/page-body.scss";

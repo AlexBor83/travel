@@ -1,7 +1,7 @@
 .country-description__wrap {
   background-image: url(../../img/background_country.png);
   background-repeat: no-repeat;
-  background-position: 200px 100px;
+  background-position: center;
 
   @media (max-width: $desktop-width) {
     background-image: none;

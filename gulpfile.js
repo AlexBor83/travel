@@ -11,12 +11,12 @@ const rename = require("gulp-rename");
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 const csso = require('gulp-csso');
-const jsmin = require('gulp-jsmin');
+const uglify = require('gulp-uglify-es').default;
+const concat = require("gulp-concat");
+//const jsmin = require('gulp-jsmin');
 const htmlmin = require('gulp-htmlmin');
 const ttf2woff = require("gulp-ttf2woff");
 const ttfwoff2 = require("gulp-ttf2woff2");
-
-let fs = require("fs");
 
 // Styles
 
@@ -50,6 +50,19 @@ const stylesbig = () => {
 
 exports.stylesbig = stylesbig;
 
+const scripts = () => {
+  return gulp.src([
+    "source/js/script_menu.js",
+    "source/js/script_tab.js",
+    "source/js/script_popup.js"])
+  .pipe(concat("script.min.js"))
+  .pipe(uglify())
+  .pipe(gulp.dest("source/js"));
+}
+
+exports.scripts = scripts;
+
+
 const html = () => {
   return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
@@ -61,48 +74,14 @@ exports.html = html;
 const fonts = () => {
   gulp.src("source/fonts/*.ttf")
   .pipe(ttf2woff())
-  .pipe(gulp.dest("build/fonts/"));
+  .pipe(gulp.dest("source/fonts/"));
 
   return gulp.src("source/fonts/*.ttf")
   .pipe(ttfwoff2())
-  .pipe(gulp.dest("build/fonts/"));
+  .pipe(gulp.dest("source/fonts/"));
 }
 
 exports.fonts = fonts;
-
-
-// function fontsStyle() {
-//   let file_content = fs.readFileSync('source/sass/blocks/fonts.scss');
-//   if (file_content == "") {
-//     fs.writeFile('source/sass/blocks/fonts.scss', "", cb);
-//     return fs.readdir('build/fonts/', function (err, items) {
-//       if (items) {
-//         let c_fontname;
-//         for (var i = 0; i < items.length; i++) {
-//           let fontname = items[i].split(".");
-//           fontname = fontname[0];
-//           if (c_fontname != fontname) {
-//             fs.appendFile(
-//               'source/sass/blocks/fonts.scss',
-//               '@include font("' +
-//                 fontname +
-//                 '", "' +
-//                 fontname +
-//                 '", "400", "normal");\r\n',
-//               cb
-//             );
-//           }
-//           c_fontname = fontname;
-//         }
-//       }
-//     });
-//   }
-// }
-
-// function cb() {}
-// exports.fontsStyle = fontsStyle;
-
-
 
 const img = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
@@ -158,6 +137,7 @@ const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
+    "source/js/script.min.js",
     "source/*ico",
   ], {
     base: "source"
@@ -179,7 +159,6 @@ const build = gulp.series(
   clean,
   copy,
   html,
-  fonts,
   styles,
   stylesbig,
   imgTask,

@@ -1,10 +1,20 @@
 .modal-ok {
-  width: 728px;
-  height: 444px;
-  background-color: #fbf8f8;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
+  display: none;
+
+  &--active {
+    display: block;
+    width: 728px;
+    height: 444px;
+    background-color: #fbf8f8;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #48494d;
+  }
 }
 
 .modal-ok__text {
