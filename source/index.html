@@ -439,7 +439,7 @@
               Свяжитесь с нами
             </span>
             <a class="price__tel tel" href="tel:++749978468446">
-              <svg class="tel__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              <svg class="tel__svg price__svg"  width="30" height="30" viewBox="0 0 30 30" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M7.39635 8.62432C7.31179 7.42623 7.57753 6.24606 8.28114 5.29684C8.89115 4.43632 9.68536 3.96636 10.6426 3.69172C11.4489 3.4525 11.9774 3.74561 12.2099 4.64204C12.5421 5.98224 13.0162 7.3225 13.1884 8.73361C13.2427 9.35485 12.8411 10.2332 12.4062 10.6856C11.3161 11.7589 11.5426 12.5399 12.37 14.1643C12.6267 14.6881 13.0344 15.5934 13.8286 16.7919C14.656 17.9992 15.0939 18.6472 16.1569 18.0975C17.3376 17.5035 18.1983 17.8855 19.0891 18.8444C19.6931 19.5369 20.3574 20.1318 20.9614 20.8243C21.8341 21.8542 21.7949 22.5641 21.1124 23.2915C19.8833 24.6309 17.854 25.0736 16.3441 24.1766C15.5106 23.6881 14.6802 23.0487 14.0188 22.303C11.1047 18.9825 9.00291 15.1212 7.73759 10.7632C7.53526 10.0265 7.44165 9.28104 7.39635 8.62432Z"
@@ -493,7 +493,7 @@
         </h2>
         <ul class="next-travel__list">
           <li class="next-travel__wrap">
-            <Ul class="next-travel__group">
+            <Ul class="next-travel__group next-travel__group--1">
               <li class="next-travel__item">
                 Марсель
               </li>
@@ -512,7 +512,7 @@
             </Ul>
           </li>
           <li class="next-travel__wrap">
-            <Ul class="next-travel__group">
+            <Ul class="next-travel__group next-travel__group--2">
               <li class="next-travel__item">
                 Сардиния
               </li>
@@ -531,7 +531,7 @@
             </Ul>
           </li>
           <li class="next-travel__wrap">
-            <Ul class="next-travel__group">
+            <Ul class="next-travel__group next-travel__group--3">
               <li class="next-travel__item">
                 Корс
               </li>
@@ -625,75 +625,6 @@
   </section>
 
   <script src="js/script.min.js"></script>
-
-  <script>
-
-    // const main = document.querySelector(".main")
-
-    // const openedModalBuys = document.querySelectorAll(".button__buy");
-    // const modalBuy = document.querySelector(".modal-buy");
-    // const forms = modalBuy.querySelectorAll(".form")
-    // const modalClouse = document.querySelectorAll(".button__clouse");
-    // const telModal = modalBuy.querySelector(".modal-buy__input--tel");
-    // const mailModal = modalBuy.querySelector(".modal-buy__input--mail");
-    // const buttonForm = document.querySelectorAll(".button__form")
-    // const modalOk = document.querySelector(".modal-ok")
-
-    // openedModalBuys.forEach(item => {
-    //   item.addEventListener("click", function (e) {
-    //     e.preventDefault();
-    //     modalBuy.classList.add("modal-buy--active");
-    //     telModal.value = localStorage.getItem("tel");
-    //     mailModal.value = localStorage.getItem("mail");
-    //     telModal.focus();
-
-
-    //   })
-    // });
-
-    // buttonForm.forEach(item => {
-    //   item.addEventListener("click", function (e) {
-    //     if (!telModal.value || !mailModal.value) {
-    //       e.preventDefault();
-    //     } else {
-    //       e.preventDefault();
-    //       localStorage.setItem("tel", telModal.value);
-    //       localStorage.setItem("mail", mailModal.value);
-    //       modalOk.classList.add("modal-ok--active")
-    //     }
-    //   })
-    // });
-
-
-    // modalClouse.forEach(item => {
-    //   item.addEventListener("click", function (e) {
-    //     e.preventDefault();
-    //     modalBuy.classList.remove("modal-buy--active");
-    //     modalOk.classList.remove("modal-ok--active");
-    //   })
-
-    // });
-
-
-    // window.addEventListener("keydown", function (e) {
-    //   if (e.keyCode === 27) {
-    //     e.preventDefault();
-    //     modalBuy.classList.remove("modal-buy--active");
-    //     modalOk.classList.remove("modal-ok--active");
-    //   }
-    // });
-
-
-
-
-
-
-
-
-
-
-  </script>
-
 
 </body>
 
