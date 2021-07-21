@@ -4,28 +4,40 @@
   margin-bottom: 140px;
   justify-content: space-around;
 
+  @media (max-width: $desktop-width) {
+    margin-bottom: 125px;
+  }
+
+
   @media (max-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 42px;
   }
 }
 
 .price__card {
   margin-right: 30px;
 
-  &--economy {
-    margin-right: 109px;
-
-    @media (max-width: $tablet-width) {
-      margin-bottom: 0px;
-    }
-  }
-
   @media (max-width: $desktop-width) {
     margin-right: 0;
+    margin-left: 48px;
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
+    margin-left: 0;
+  }
+  &--economy {
+    margin-right: 109px;
+
+    @media (max-width: $desktop-width) {
+      margin-right: 52px;
+      margin-left: 14px;
+    }
+
+    @media (max-width: $tablet-width) {
+      margin: 0;
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -42,7 +54,7 @@
 }
 
 .price__title {
-  margin-top: 130px;
+  margin-top: 115px;
   margin-bottom: 50px;
 
   &::before {
@@ -56,28 +68,30 @@
 }
 
 .price__text {
-  margin-bottom: 60px;
+  margin-bottom: 56px;
+
+  @media (max-width: $desktop-width) {
+    margin: 0 10px 31px 10px;
+  }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    line-height: 27px;
   }
 }
 
 .price__subtitle {
   display: block;
   margin-left: 50px;
+  margin-bottom: 11px;
   font-weight: 500;
   font-size: 22px;
   line-height: 34px;
 
   @media (max-width: $desktop-width) {
     font-size: 18px;
-    line-height: 34px;
-    padding-bottom: 10px;
-  }
-
-  @media (max-width: $tablet-width) {
     margin-left: 0;
+    line-height: 34px;
   }
 }
 
@@ -88,16 +102,27 @@
 
   @media (max-width: $desktop-width) {
     display: block;
+    margin-left: 0;
     font-size: 18px;
     line-height: 34px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
 
   @media (max-width: $tablet-width) {
     margin-left: 0;
+    padding-bottom: 35px;
   }
 }
 
-.price__tel path {
-  stroke: #FE7865;
+.price__svg {
+  left: -40px;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+
+}
+
+.price__svg path {
+  stroke: #fe7865;
 }

@@ -15,6 +15,15 @@
     transform: translate(-50%, -50%);
     border: 1px solid #48494d;
   }
+
+  @media (max-width: $tablet-width) {
+    width: 320px;
+    height: 568px;
+    background-color: #fff;
+
+  }
+
+
 }
 
 .modal-ok__text {
@@ -25,4 +34,10 @@
   font-size: 25px;
   line-height: 42px;
   width: 400px;
+
+  @media (max-width: $tablet-width) {
+    width: 280px;
+  }
+
+
 }

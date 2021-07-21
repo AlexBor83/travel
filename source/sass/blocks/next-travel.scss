@@ -7,10 +7,9 @@
 }
 
 .next-travel__wrap {
-
   @media (max-width: $tablet-width) {
     flex-basis: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
 
     &:last-child {
       margin: 0 auto 50px auto;
@@ -22,7 +21,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-right: 30px;
+  margin-right: 52px;
+
+  @media (max-width: $desktop-width) {
+    margin-right: 57px;
+
+    &--3 {
+      margin-right: 30px;
+    }
+  }
 
   @media (max-width: $tablet-width) {
     margin-right: 0;

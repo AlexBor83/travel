@@ -2,7 +2,8 @@
   width: 370px;
   border: 3px solid rgba(44, 46, 63, 0.3);
   border-radius: 6px;
-  padding: 40px 30px 30px 30px;
+  padding: 40px 27px 27px 30px;
+  letter-spacing: 1.1px;
 
   &:hover,
   &:focus {
@@ -22,13 +23,14 @@
   font-weight: 600;
   font-size: 28px;
   line-height: 34px;
-  margin-bottom: 19px;
+  margin-bottom: 16px;
+
 
   @media (max-width: $desktop-width) {
     width: 225px;
     font-size: 24px;
     line-height: 34px;
-    margin: 30px auto 11px auto;
+    margin: 30px auto 22px auto;
   }
 }
 
@@ -36,8 +38,9 @@
   margin: 0;
   font-size: 16px;
   line-height: 24px;
-  width: 289px;
+  width: 270px;
   margin-bottom: 80px;
+
 
   @media (max-width: $desktop-width) {
     margin: 0 auto 30px auto;
@@ -63,8 +66,8 @@
 
 .card__item {
   position: relative;
-  width: 280px;
-  margin-bottom: 30px;
+  width: 260px;
+  margin-bottom: 12px;
   padding: 0;
 
   &::before {
@@ -79,15 +82,23 @@
   }
 
   &:last-child {
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   @media (max-width: $desktop-width) {
-    width: 218px;
+    width: 219px;
+    margin-bottom: 7px;
 
     &:last-child {
-      margin-bottom: 45px;
+      margin-bottom: 46px;
     }
+  }
+
+  @media (max-width: $tablet-width) {
+    &:last-child {
+      margin-bottom: 32px;
+    }
+
   }
 }
 
@@ -100,14 +111,17 @@
 
 
 .price__card--economy .card__item {
+  margin-bottom: 15px;
+
   &:last-child {
     margin-bottom: 30px;
   }
 
   @media (max-width: $desktop-width) {
+    margin-bottom: 10px;
 
     &:last-child {
-      margin-bottom: 15px;
+      margin-bottom: 27px;
     }
   }
 }

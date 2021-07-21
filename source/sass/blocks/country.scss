@@ -1,5 +1,4 @@
 .country {
-
   @media (max-width: $desktop-width) {
     padding-left: 80px;
     padding-right: 80px;
@@ -18,20 +17,19 @@
 
   @media (max-width: $desktop-width) {
     width: 100%;
-    margin-top: 60px;
+    margin-top: 78px;
     margin-bottom: 20px;
     text-align: center;
   }
 
   @media (max-width: $tablet-width) {
-    margin-top: 300px;
+    margin-top: 308px;
   }
 }
 
 .country__text {
   width: 330px;
   margin-bottom: 56px;
-  letter-spacing: -0.466667px;
 
   @media (max-width: $desktop-width) {
     width: 345px;
@@ -66,20 +64,38 @@
   position: relative;
   padding-bottom: 100px;
 
+  &:last-child,
+  &:nth-last-child(2) {
+    margin: 0 auto;
+    padding-bottom: 74px;
+  }
+
   @media (max-width: $desktop-width) {
     min-height: 425px;
     width: 288px;
     padding: 0px;
     margin-bottom: 19px;
 
+    &:nth-last-child(2) {
+      padding-bottom: 23px;
+      margin: 0;
+    }
+
     &:last-child {
-      margin: 0 auto;
-      margin-bottom: 100px;
+      margin: 0 auto 3px;
     }
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 31px;
+
+    &:nth-last-child(2) {
+      padding-bottom: 30px;
+    }
+
+    &:last-child {
+      padding-bottom: 17px;
+    }
   }
 }
 
@@ -101,5 +117,9 @@
   @media (max-width: $desktop-width) {
     top: 362px;
     left: 45px;
+  }
+
+  @media (max-width: $tablet-width) {
+    left: 36px;
   }
 }

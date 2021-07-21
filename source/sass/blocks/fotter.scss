@@ -5,8 +5,8 @@
   margin-bottom: 70px;
 
   @media (max-width: $desktop-width) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     flex-wrap: wrap;
   }
 
@@ -18,13 +18,17 @@
 
 .fotter__travel {
   flex-basis: 33.3%;
+  margin-left: 13px;
 
   @media (max-width: $desktop-width) {
     flex-basis: 50%;
+    margin-left: 0;
+    padding-left: 10px;
   }
 
   @media (max-width: $tablet-width) {
     flex-basis: 100%;
+    padding-left: 0;
   }
 }
 
@@ -32,13 +36,22 @@
   font-size: 18px;
   line-height: 32px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
+  letter-spacing: 0.7px;
 
   &--contacts {
-    margin-left: 40px;
+    margin-bottom: 21px;
+    margin-left: 94px;
+
+    @media (max-width: $tablet-width) {
+      margin-left: 0;
+      margin-bottom: 26px;
+    }
   }
 
   &--corporate {
+    margin-bottom: 21px;
+
     @media (max-width: $tablet-width) {
       font-weight: 600;
       font-size: 17px;
@@ -48,9 +61,20 @@
 
 .fotter__contacts {
   flex-basis: 33.3%;
+  border-left: 1px solid #D7D9DF;
+  border-right: 1px solid #D7D9DF;
 
   @media (max-width: $desktop-width) {
     flex-basis: 50%;
+    border-right: none;
+
+  @media (max-width: $tablet-width) {
+    border-left: none;
+    border-top: 1px solid #D7D9DF;
+  }
+
+
+
   }
 
   @media (max-width: $tablet-width) {
@@ -63,9 +87,16 @@
 
   @media (max-width: $desktop-width) {
     flex-basis: 100%;
-    margin-top: 30px;
+    margin-top: 58px;
     text-align: center;
+    border-top: 1px solid #D7D9DF;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 24px;
+  }
+
+
 }
 
 .footter__link {
@@ -74,15 +105,15 @@
   line-height: 17px;
   text-decoration-line: underline;
   color: #fe7865;
-  margin-left: 80px;
+  margin-left: 134px;
   margin-bottom: 19px;
 
   @media (max-width: $desktop-width) {
-    margin-left: 90px;
+    margin-left: 126px;
   }
 
   @media (max-width: $tablet-width) {
-    margin-left: 0;
+    margin-left: 21px;
   }
 
   &--mail {
@@ -96,38 +127,52 @@
 }
 
 .footter__svg {
-
   &--mail {
     position: absolute;
     left: -40px;
     top: -5px;
 
     & path {
-      fill: #D7D9DF;
+      fill: #d7d9df;
     }
+  }
+
+  @media (max-width: $tablet-width) {
+    left: 0px;
+    top: 0;
   }
 }
 
-.footter__link--mail:hover path{
+.footter__link--mail:hover path {
   fill: #fe7865;
 }
 
 .footter__link--tel path {
-  stroke: #D7D9DF;
+  stroke: #d7d9df;
+}
+
+.fotter__corporate {
+  padding-left: 58px;
+
+  @media (max-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .fotter__text {
-  width: 320px;
+  width: 286px;
   color: rgba(20, 21, 23, 0.5);
   font-size: 14px;
   line-height: 24px;
 
   @media (max-width: $desktop-width) {
-    width: 100%;
+    width: 680px;
+    margin: 0 auto;
   }
 
   @media (max-width: $tablet-width) {
     padding-right: 10px;
     padding-left: 10px;
+    width: 100%;
   }
 }
